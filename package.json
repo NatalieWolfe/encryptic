@@ -1,0 +1,28 @@
+{
+  "name": "encryptic",
+  "version": "0.0.0",
+  "description": "The world's greatest crossword puzzle.",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NateLillich/encryptic"
+  },
+  "author": "Natalie Wolfe <natalie@lifewanted.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NateLillich/encryptic/issues"
+  },
+  "engines": {
+    "node" : "0.10.x"
+  },
+  "dependencies": {
+    "mysql"         : "*",
+    "express"       : "*",
+    "jade"          : "*",
+    "stylus"        : "*",
+    "generic-pool"  : "*"
+  }
+}
