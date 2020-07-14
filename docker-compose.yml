@@ -1,0 +1,21 @@
+version: '3'
+services:
+  api:
+    build: .
+    ports:
+      - "8080"
+    links:
+      - db
+  db:
+    image: postgres:12
+    restart: always
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_USER: encryptic
+      POSTGRES_PASSWORD: "devpassword"
+  dbadmin:
+    image: adminer
+    restart: always
+    ports:
+      - "8088:8080"

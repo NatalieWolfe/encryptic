@@ -1,0 +1,5 @@
+{
+  "database": {
+    "connectionString": "postgres://encryptic:devpassword@localhost:32769/encryptic"
+  }
+}

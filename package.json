@@ -1,0 +1,32 @@
+{
+  "name": "encryptic",
+  "version": "0.0.0",
+  "description": "The greatest crossword puzzle of all time.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "load-db": "npm run build && node ./scripts/load-db.js",
+    "dev": "docker-compose build && docker-compose up",
+    "sudo-dev": "sudo docker-compose build && sudo docker-compose up",
+    "start": "npm run build && node out/index.js",
+    "start-parsed": "npm run build && node out/index.js | bunyan -o short"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalieWolfe/encryptic.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/NatalieWolfe/encryptic/issues"
+  },
+  "homepage": "https://github.com/NatalieWolfe/encryptic#readme",
+  "dependencies": {
+    "@types/config": "0.0.36",
+    "@types/koa": "^2.11.3",
+    "config": "^3.3.1",
+    "koa": "^2.13.0",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.3",
+    "typescript": "^3.9.6"
+  }
+}
